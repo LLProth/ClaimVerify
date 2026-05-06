@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4c5fb8cf-9eb9-4dcc-8e3b-e4c59b6149cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57209/ClaimVerifyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClaimVerifyService.disco" MetadataType="Disco" ID="ff8c1818-0f76-4861-9a9e-9a1dc944fda3" SourceId="1" SourceUrl="http://localhost:57209/ClaimVerifyService.svc?disco" />
+    <MetadataFile FileName="ClaimVerifyService.xsd" MetadataType="Schema" ID="719aaa58-0e87-4dc8-9d92-f7083a183028" SourceId="1" SourceUrl="http://localhost:57209/ClaimVerifyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClaimVerifyService.wsdl" MetadataType="Wsdl" ID="4d3bb065-8575-4a98-8c9a-c99076dbe89e" SourceId="1" SourceUrl="http://localhost:57209/ClaimVerifyService.svc?wsdl" />
+    <MetadataFile FileName="ClaimVerifyService1.xsd" MetadataType="Schema" ID="3ecef480-872c-4f3c-8550-8a2de59d135d" SourceId="1" SourceUrl="http://localhost:57209/ClaimVerifyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClaimVerifyService1.wsdl" MetadataType="Wsdl" ID="8366a259-2f78-4208-a514-f8febeceb6e3" SourceId="1" SourceUrl="http://localhost:57209/ClaimVerifyService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

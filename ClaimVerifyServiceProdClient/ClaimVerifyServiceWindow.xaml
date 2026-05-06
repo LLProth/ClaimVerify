@@ -1,0 +1,79 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Claim Verify Web Service Test" Height="493" Width="1055">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width="150*" />
+            <ColumnDefinition Width="200*" />
+            <ColumnDefinition Width="55*" />
+            <ColumnDefinition Width="200*" />
+            <ColumnDefinition Width="200*" />
+        </Grid.ColumnDefinitions>
+        <Label Name="loginLabel" Grid.Row="1" Grid.Column="1" Content="Login:" HorizontalAlignment="Right" />
+        <TextBox Name="loginNameTextbox" Grid.Row="1" Grid.Column="2" Text="WsiTestUser"  />
+        <Label Name="pwlabel" Grid.Row="2" Grid.Column="1" Content="Password:" HorizontalAlignment="Right" />
+        <TextBox Name="pwTextbox" Grid.Row="2" Grid.Column="2" Text="wsitest123" />
+        <Label Name="ssnLabel" Grid.Row="3" Grid.Column="1" Content="SSN:" HorizontalAlignment="Right" />
+        <TextBox Name="ssnTextbox" Grid.Row="3" Grid.Column="2"  />
+        <Label Name="FirstNamelabel" Grid.Row="4" Grid.Column="1" Content="First Name:" HorizontalAlignment="Right" />
+        <TextBox Name="FirstNameTextbox" Grid.Row="4" Grid.Column="2" />
+        <Label Name="LastNamelabel" Grid.Row="5" Grid.Column="1" Content="Last Name:" HorizontalAlignment="Right" />
+        <TextBox Name="LastNameTextbox" Grid.Row="5" Grid.Column="2" />
+        <Label Name="DateOfBirthLabel" Grid.Row="6" Grid.Column="1" Content="DOB:"  HorizontalAlignment="Right" />
+        <TextBox Name="DateOfBirthTextbox" Grid.Row="6" Grid.Column="2" Text="1/1/2000" />
+
+        <Label Name="requestIdLabel" Grid.Row="9" Grid.Column="1" Content="Request ID:" HorizontalAlignment="Right" />
+        <TextBox Name="requestIdTextbox" Grid.Row="9" Grid.Column="2" IsEnabled="False" />
+        <Label Name="Statuslabel" Grid.Row="10" Grid.Column="1" Content="Svc Call Status:" HorizontalAlignment="Right" />
+        <TextBox Name="statusTextbox" Grid.Row="10" Grid.Column="2" IsEnabled="False"  />
+        <Label Name="exceptionLabel" Grid.Row="10" Grid.Column="3" Content="Exception:" HorizontalAlignment="Right" />
+        <TextBox Name="exceptionTextbox" Grid.Row="10" Grid.Column="4" IsEnabled="False" Grid.ColumnSpan="3" />
+
+        <TextBox Name="requestXmlTextbox" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="4"
+                 IsEnabled="True" TextWrapping="Wrap" />
+        <TextBox Name="responseXmlTextbox" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="4"
+                 IsEnabled="True" TextWrapping="Wrap" />
+
+        <DataGrid Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="6" Grid.RowSpan="6" 
+                  Name="resultsGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Width="auto" Height="auto"
+                  CanUserAddRows="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First" Binding="{Binding Path=FirstName}"  Width="10*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Middle" Binding="{Binding Path=MiddleName}" Width="10*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Last" Binding="{Binding Path=LastName}" Width="12*" IsReadOnly="True" />
+                <DataGridTextColumn Header="DoB" Binding="{Binding Path=DateOfBirth}" Width="12*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Injry Type" Binding="{Binding Path=TypeOfInjury}" Width="25*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Injry Date" Binding="{Binding Path=InjuryDate}" Width="12*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Employer" Binding="{Binding Path=EmployerName}" Width="25*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Claim Sts" Binding="{Binding Path=ClaimStatus}" Width="10*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Pay Sts" Binding="{Binding Path=PayStatus}" Width="10*" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Name="submitButton" Content="Submit" Grid.Row="7" Grid.Column="2" />
+        <Label Name="server" Grid.ColumnSpan="2" Content="" Grid.Column="4" HorizontalAlignment="Left" Height="25" Grid.Row="9" VerticalAlignment="Top" Width="462"/>
+    </Grid>
+</Window>
