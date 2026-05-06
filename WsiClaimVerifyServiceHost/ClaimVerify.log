@@ -1,0 +1,399 @@
+Info::5/15/2023 4:15 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:15 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>5043a62f-0b8b-4cdd-8906-4490447b7e7d</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:15 PM  SearchByNameDob() start
+Info::5/15/2023 4:15 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:15 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:15 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:15 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>5043a62f-0b8b-4cdd-8906-4490447b7e7d</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:16 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:16 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>1e93a83f-5b6d-4b66-9489-dc484a7c9f24</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:16 PM  SearchByNameDob() start
+Info::5/15/2023 4:16 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:16 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:16 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:16 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>1e93a83f-5b6d-4b66-9489-dc484a7c9f24</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:16 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:16 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>55d1adf6-ede5-48d8-b752-a5550d061de1</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-05-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:16 PM  SearchByNameDob() start
+Info::5/15/2023 4:16 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:16 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:17 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:17 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>55d1adf6-ede5-48d8-b752-a5550d061de1</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:17 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:17 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>4a788dba-5337-4e45-9f38-de99c7c9050e</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:17 PM  SearchByNameDob() start
+Info::5/15/2023 4:17 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:17 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:17 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:17 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>4a788dba-5337-4e45-9f38-de99c7c9050e</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:19 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:19 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>cf35eca4-5380-4d97-9a4c-854d6e93efb5</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:19 PM  SearchByNameDob() start
+Info::5/15/2023 4:19 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:19 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:21 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:21 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>cf35eca4-5380-4d97-9a4c-854d6e93efb5</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:21 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:21 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>c9ec08d8-7866-473d-a244-793a739a5976</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:21 PM  SearchByNameDob() start
+Info::5/15/2023 4:21 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:21 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Error::5/15/2023 4:21 PM 
+ORA-01861: literal does not match format string
+
+   at System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   at System.Data.OracleClient.OracleDataReader.ReadInternal()
+   at System.Data.OracleClient.OracleDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.DbAccess.DALBase.ExecuteSelect(String sql, String[] parmNames, Object[] parmValues)
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 44
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDAL.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 49
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/15/2023 4:21 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>c9ec08d8-7866-473d-a244-793a739a5976</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:24 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:24 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ebee96bc-39e5-4c24-b0df-38ca04a52c6a</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:24 PM  SearchByNameDob() start
+Info::5/15/2023 4:24 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:24 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Info::5/15/2023 4:25 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:25 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>42f05ce1-1f43-4ea7-ab50-3e88d15542f1</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:25 PM  SearchByNameDob() start
+Info::5/15/2023 4:25 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:25 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Verbose::5/15/2023 4:25 PM  SearchByNameDob() 3 claim rows found
+Verbose::5/15/2023 4:25 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/15/2023 4:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/15/2023 4:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/15/2023 4:25 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>42f05ce1-1f43-4ea7-ab50-3e88d15542f1</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/15/2023 4:27 PM ------------------- Start Verify -------------------
+Verbose::5/15/2023 4:27 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>81f05d9d-be8f-459e-910a-327daa3a6ea5</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/15/2023 4:27 PM  SearchByNameDob() start
+Info::5/15/2023 4:27 PM Created ClaimSearchDAL
+Verbose::5/15/2023 4:27 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Verbose::5/15/2023 4:27 PM  SearchByNameDob() 3 claim rows found
+Verbose::5/15/2023 4:27 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/15/2023 4:27 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/15/2023 4:27 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/15/2023 4:27 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>81f05d9d-be8f-459e-910a-327daa3a6ea5</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/16/2023 4:04 PM ------------------- Start Verify -------------------
+Verbose::5/16/2023 4:04 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>0dc4f1cd-83c7-496a-a11b-a517b74f82ec</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/16/2023 4:04 PM  SearchBySsn() start
+Info::5/16/2023 4:04 PM Created ClaimSearchDAL
+Verbose::5/16/2023 4:04 PM  connection: Data Source=wsiprod;User Id=Robot1;Password=robot!911;Integrated Security=no;
+Verbose::5/16/2023 4:05 PM  SearchBySsn() 3 claim rows found
+Verbose::5/16/2023 4:05 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/16/2023 4:05 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/16/2023 4:05 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/16/2023 4:05 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>0dc4f1cd-83c7-496a-a11b-a517b74f82ec</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 1:51 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 1:51 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>aa0c06e3-8000-49be-8f55-ebbf383c7df4</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 1:51 PM  SearchBySsn() start
+Info::5/17/2023 2:19 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:19 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>9bcfc73d-555d-4c9e-a1ee-6e8907aa433a</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:19 PM  SearchBySsn() start
+Info::5/17/2023 2:23 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:23 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>8838526c-6fff-4b6d-8025-9a10a57f00ef</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:23 PM  SearchBySsn() start
+Error::5/17/2023 2:24 PM 
+Object reference not set to an instance of an object.
+   at WSI.Utility.Database.DatabaseService..ctor(String connectionString)
+   at WsiClaimVerifyService.ClaimSearchDALNew..ctor() in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 112
+   at WsiClaimVerifyService.ClaimSearch.SearchBySsn(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 11
+Verbose::5/17/2023 2:24 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>8838526c-6fff-4b6d-8025-9a10a57f00ef</RequestId><ClaimList /><Status>exception</Status><Exception>Object reference not set to an instance of an object.</Exception></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:24 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:24 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>14fefdca-b66e-4007-8f9a-a3722ce35bd0</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:25 PM  SearchBySsn() start
+Info::5/17/2023 2:28 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:28 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>3fb30662-0bf4-4c6a-bf97-65cdde45a93b</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:28 PM  SearchBySsn() start
+Info::5/17/2023 2:29 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:29 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Error::5/17/2023 2:29 PM 
+ORA-12154: TNS:could not resolve the connect identifier specified
+   at OracleInternal.Network.AddressResolution..ctor(String TNSAlias, SqlNetOraConfig SNOConfig, Hashtable ObTnsHT, String instanceName, ConnectionOption CO)
+   at OracleInternal.Network.OracleCommunication.Resolve(String tnsAlias, ConnectionOption& CO)
+   at OracleInternal.ConnectionPool.PoolManager`3.ResolveTnsAlias(ConnectionString cs, Object OC)
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, OracleConnection connRefForCriteria, String instanceName)
+ORA-12154: TNS:could not resolve the connect identifier specified
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at WSI.Utility.Database.DatabaseService.OpenConnection()
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues, ParameterDirection[] parameterDirections)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues)
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimBySsn(String ssn) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 125
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimBySsn(String ssn) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 129
+   at WsiClaimVerifyService.ClaimSearch.SearchBySsn(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 12
+Verbose::5/17/2023 2:29 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>3fb30662-0bf4-4c6a-bf97-65cdde45a93b</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:29 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:29 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ce7d62be-86c3-4b4d-bfe7-f36e1881a25f</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:29 PM  SearchBySsn() start
+Info::5/17/2023 2:29 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:29 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Info::5/17/2023 2:32 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:32 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>0562b7c2-8e65-408d-ba67-2a424b79dc6b</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:32 PM  SearchBySsn() start
+Info::5/17/2023 2:32 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:32 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 2:32 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 2:32 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 2:32 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:32 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:32 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>0562b7c2-8e65-408d-ba67-2a424b79dc6b</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:33 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:33 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ee0c8f26-b282-4bf7-b0bd-b772f324acf0</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:33 PM  SearchByNameDob() start
+Info::5/17/2023 2:33 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:33 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Error::5/17/2023 2:33 PM 
+ORA-01861: literal does not match format string
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues, ParameterDirection[] parameterDirections)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues)
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 143
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 148
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/17/2023 2:33 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ee0c8f26-b282-4bf7-b0bd-b772f324acf0</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:33 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:33 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>178c775b-4faf-4ae1-8c8a-8aee225965af</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:33 PM  SearchByNameDob() start
+Info::5/17/2023 2:33 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:33 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Error::5/17/2023 2:34 PM 
+ORA-01861: literal does not match format string
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues, ParameterDirection[] parameterDirections)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues)
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 143
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimByName(String fname, String lname, DateTime dob) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 148
+   at WsiClaimVerifyService.ClaimSearch.SearchByNameDob(ClaimVerifyServiceRequest request) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 51
+Verbose::5/17/2023 2:34 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>178c775b-4faf-4ae1-8c8a-8aee225965af</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:35 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:35 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>68c01caf-3237-4dc4-b969-c9887f25f23d</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:35 PM  SearchByNameDob() start
+Info::5/17/2023 2:35 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:35 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 2:37 PM  SearchByNameDob() 3 claim rows found
+Verbose::5/17/2023 2:37 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 2:37 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:37 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:37 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>68c01caf-3237-4dc4-b969-c9887f25f23d</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:38 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:38 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>d0a82d06-0d6c-40a9-978e-4aca4e8abc67</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:38 PM  SearchByNameDob() start
+Info::5/17/2023 2:38 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:38 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 2:38 PM  SearchByNameDob() 3 claim rows found
+Verbose::5/17/2023 2:38 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 2:38 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:38 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:38 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>d0a82d06-0d6c-40a9-978e-4aca4e8abc67</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 2:59 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 2:59 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>3737bc66-42c6-4583-b94d-13e6bb95b5cf</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 2:59 PM  SearchBySsn() start
+Info::5/17/2023 2:59 PM Created ClaimSearchDAL
+Verbose::5/17/2023 2:59 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 2:59 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 2:59 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 2:59 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:59 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 2:59 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>3737bc66-42c6-4583-b94d-13e6bb95b5cf</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:23 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:23 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>a076e943-34d8-4789-8f45-a485a3bc4209</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:25 PM  SearchBySsn() start
+Info::5/17/2023 3:25 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:25 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 3:25 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:25 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>a076e943-34d8-4789-8f45-a485a3bc4209</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:25 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:25 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ed0df408-9d2d-4c67-81b3-0479456c31c1</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:25 PM  SearchBySsn() start
+Info::5/17/2023 3:25 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:25 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 3:25 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:25 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:25 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ed0df408-9d2d-4c67-81b3-0479456c31c1</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:27 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:27 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>66ed49f6-b247-41b4-bac5-a1507759cb1d</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:28 PM  SearchBySsn() start
+Info::5/17/2023 3:28 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:28 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Error::5/17/2023 3:28 PM 
+ORA-12154: TNS:could not resolve the connect identifier specified
+   at OracleInternal.Network.AddressResolution..ctor(String TNSAlias, SqlNetOraConfig SNOConfig, Hashtable ObTnsHT, String instanceName, ConnectionOption CO)
+   at OracleInternal.Network.OracleCommunication.Resolve(String tnsAlias, ConnectionOption& CO)
+   at OracleInternal.ConnectionPool.PoolManager`3.ResolveTnsAlias(ConnectionString cs, Object OC)
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, OracleConnection connRefForCriteria, String instanceName)
+ORA-12154: TNS:could not resolve the connect identifier specified
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at WSI.Utility.Database.DatabaseService.OpenConnection()
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues, ParameterDirection[] parameterDirections)
+   at WSI.Utility.Database.DatabaseService.ExecuteSelect(String sql, String[] parameterNames, Object[] parameterValues)
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimBySsn(String ssn) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 126
+There was an error accessing the WSI Claims database. 
+   at WsiClaimVerifyService.ClaimSearchDALNew.LookupClaimBySsn(String ssn) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearchDAL.vb:line 130
+   at WsiClaimVerifyService.ClaimSearch.SearchBySsn(ClaimVerifyServiceRequest request, String connectionString) in C:\Perforce\bkprothero_WSI15985_Development_dotNet\WebServices\WsiClaimVerifyService\WsiClaimVerifyService\ClaimSearch.vb:line 12
+Verbose::5/17/2023 3:28 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>66ed49f6-b247-41b4-bac5-a1507759cb1d</RequestId><ClaimList /><Status>exception</Status><Exception>There was an error accessing the WSI Claims database. </Exception></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:29 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:29 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>71b21928-6b18-4cfe-9f54-de6aa8d33588</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:29 PM  SearchBySsn() start
+Info::5/17/2023 3:29 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:29 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 3:29 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:29 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>71b21928-6b18-4cfe-9f54-de6aa8d33588</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:29 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:29 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>192f07fb-36e1-46cb-8e1b-c76a5fc0492a</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName>Wanda</FirstName><LastName>Prothero</LastName><DateOfBirth>1967-11-05T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:29 PM  SearchByNameDob() start
+Info::5/17/2023 3:29 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:29 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 3:29 PM  SearchByNameDob() 3 claim rows found
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:29 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:29 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>192f07fb-36e1-46cb-8e1b-c76a5fc0492a</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/17/2023 3:30 PM ------------------- Start Verify -------------------
+Verbose::5/17/2023 3:30 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ed125293-ca1b-48c3-9b2f-6957ff8cf447</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/17/2023 3:30 PM  SearchBySsn() start
+Info::5/17/2023 3:30 PM Created ClaimSearchDAL
+Verbose::5/17/2023 3:30 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/17/2023 3:30 PM  SearchBySsn() 3 claim rows found
+Verbose::5/17/2023 3:30 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/17/2023 3:30 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:30 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/17/2023 3:30 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>ed125293-ca1b-48c3-9b2f-6957ff8cf447</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/19/2023 1:26 PM ------------------- Start Verify -------------------
+Verbose::5/19/2023 1:26 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>cc9137b8-83e6-4083-9609-a42bc9cf5cd8</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/19/2023 1:26 PM  SearchBySsn() start
+Info::5/19/2023 1:26 PM Created ClaimSearchDAL
+Verbose::5/19/2023 1:26 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/19/2023 1:26 PM  SearchBySsn() 3 claim rows found
+Verbose::5/19/2023 1:26 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/19/2023 1:26 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/19/2023 1:26 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/19/2023 1:26 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>cc9137b8-83e6-4083-9609-a42bc9cf5cd8</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/19/2023 2:24 PM ------------------- Start Verify -------------------
+Verbose::5/19/2023 2:24 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>7d31fa63-0079-4344-9fb7-529c41b91468</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN>501040161</SSN><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/19/2023 2:24 PM  SearchBySsn() start
+Info::5/19/2023 2:24 PM Created ClaimSearchDAL
+Verbose::5/19/2023 2:24 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/19/2023 2:24 PM  SearchBySsn() 3 claim rows found
+Verbose::5/19/2023 2:24 PM     decodeClaimStatus Accepted-Closed coded to Accepted
+Verbose::5/19/2023 2:24 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/19/2023 2:24 PM     decodeClaimStatus Accepted-Presumed Closed per 65-05-35 coded to Accepted
+Verbose::5/19/2023 2:24 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>7d31fa63-0079-4344-9fb7-529c41b91468</RequestId><ClaimList><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Missouri Valley Family YMCA</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2022-01-10T10:15:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Hip</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>Fireside Office Products Inc</EmployerName><FirstName>Wanda</FirstName><InjuryDate>1990-12-06T00:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Knee</TypeOfInjury></Claim><Claim><ClaimStatus>Accepted</ClaimStatus><DateOfBirth>1967-11-05T00:00:00</DateOfBirth><EmployerName>North Dakota State University</EmployerName><FirstName>Wanda</FirstName><InjuryDate>2001-11-15T16:00:00</InjuryDate><LastName>Prothero</LastName><MiddleName /><PayStatus>Inactive</PayStatus><TypeOfInjury>Lung/Pulmonary</TypeOfInjury></Claim></ClaimList><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>
+Info::5/19/2023 2:26 PM ------------------- Start Verify -------------------
+Verbose::5/19/2023 2:26 PM <ClaimVerifyServiceRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>e9b61949-c014-4b8c-bccb-fef7c3bc7572</RequestId><UserName>dhsuser1</UserName><UserPw>DhsVerify1@</UserPw><SSN /><FirstName /><LastName /><DateOfBirth>2000-01-01T00:00:00</DateOfBirth></ClaimVerifyServiceRequest>
+Verbose::5/19/2023 2:26 PM  SearchByNameDob() start
+Info::5/19/2023 2:26 PM Created ClaimSearchDAL
+Verbose::5/19/2023 2:26 PM  connection: Data Source=wsiuat;User Id=commproc;Password=commproc
+Verbose::5/19/2023 2:26 PM  SearchByNameDob() 0 claim rows found
+Verbose::5/19/2023 2:26 PM <ClaimVerifyServiceResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://svcs.workforcesafety.com/claims/verify"><RequestId>e9b61949-c014-4b8c-bccb-fef7c3bc7572</RequestId><ClaimList /><Status>success</Status><Exception i:nil="true" /></ClaimVerifyServiceResponse>

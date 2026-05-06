@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://svcs.workforcesafety.com/claims/verify" elementFormDefault="qualified" targetNamespace="http://svcs.workforcesafety.com/claims/verify" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Verify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="requestData" nillable="true" type="tns:ClaimVerifyServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ClaimVerifyServiceRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserPw" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClaimVerifyServiceRequest" nillable="true" type="tns:ClaimVerifyServiceRequest" />
+  <xs:element name="VerifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VerifyResult" nillable="true" type="tns:ClaimVerifyServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ClaimVerifyServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaimList" nillable="true" type="tns:ClaimListType" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exception" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClaimVerifyServiceResponse" nillable="true" type="tns:ClaimVerifyServiceResponse" />
+  <xs:complexType name="ClaimListType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Claim" nillable="true" type="tns:Claim" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClaimListType" nillable="true" type="tns:ClaimListType" />
+  <xs:complexType name="Claim">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaimStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EmployerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InjuryDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeOfInjury" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Claim" nillable="true" type="tns:Claim" />
+</xs:schema>

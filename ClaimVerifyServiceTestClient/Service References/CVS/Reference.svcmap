@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6ee193c2-28de-4864-9159-5d239ba4f904" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://itdwsinett2.netstaging.nd.gov/wsi/ClaimVerifyWebservice/ClaimVerifyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClaimVerifyService.wsdl" MetadataType="Wsdl" ID="e16aff7b-bb3e-450b-b1e2-be22164f2127" SourceId="1" SourceUrl="http://itdwsinett2.nd.gov/WSI/ClaimVerifyWebService/ClaimVerifyService.svc?wsdl" />
+    <MetadataFile FileName="ClaimVerifyService.xsd" MetadataType="Schema" ID="3e805337-51dd-4f07-be33-c8c87822e75f" SourceId="1" SourceUrl="http://itdwsinett2.nd.gov/WSI/ClaimVerifyWebService/ClaimVerifyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClaimVerifyService.disco" MetadataType="Disco" ID="3d64c063-5a6f-4e01-9216-8aaf420a5251" SourceId="1" SourceUrl="http://itdwsinett2.nd.gov/WSI/ClaimVerifyWebService/ClaimVerifyService.svc?disco" />
+    <MetadataFile FileName="ClaimVerifyService1.wsdl" MetadataType="Wsdl" ID="3f578d15-c4cf-4576-b1a8-065b9c35e438" SourceId="1" SourceUrl="http://itdwsinett2.nd.gov/WSI/ClaimVerifyWebService/ClaimVerifyService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ClaimVerifyService1.xsd" MetadataType="Schema" ID="6d38f22c-c3b6-4386-82ab-a4a8b7a0e878" SourceId="1" SourceUrl="http://itdwsinett2.nd.gov/WSI/ClaimVerifyWebService/ClaimVerifyService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
